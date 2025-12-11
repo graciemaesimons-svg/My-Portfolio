@@ -1,0 +1,51 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+
+
+
+.navbar {
+	background-color: #403F4C !important;
+	font-family: "legitima", serif;
+font-weight: 500;
+font-style: normal;
+}
+
+header.custom-header {
+	background-color: #EFBCD5 !important;
+	background-image: none !important;
+	font-family: "legitima", serif;
+font-weight: 500;
+font-style: italic;
+	font-size: 1.5rem;
+	color: #403F4C !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 30vh;
+	padding: 40px 0;
+	margin-top: 56px;
+}
+
+body {
+	font-family: "legitima", serif;
+font-weight: 500;
+font-style: normal;
+	color:#403F4C !important;
+}
+
+.my-photo {
+	max-width: 200px;
+	border-radius: 8px
+}
+
+.pink-section {
+    background-color: #EFBCD5 !important; 
+    color: #4A2B2B !important;           
+}
+.btn {
+    background-color: #403F4C !important;   
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
