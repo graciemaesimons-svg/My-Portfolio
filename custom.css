@@ -1,51 +1,85 @@
-/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
-
-
-
-.navbar {
-	background-color: #403F4C !important;
-	font-family: "legitima", serif;
-font-weight: 500;
-font-style: normal;
+:root{
+  --purple:#4B2D6A;
+  --pink:#EFBCD5;
+  --dark:#403F4C;
+  --soft:#faf7fb;
 }
 
-header.custom-header {
-	background-color: #EFBCD5 !important;
-	background-image: none !important;
-	font-family: "legitima", serif;
-font-weight: 500;
-font-style: italic;
-	font-size: 1.5rem;
-	color: #403F4C !important;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 30vh;
-	padding: 40px 0;
-	margin-top: 56px;
+body{
+  font-family: "legitima", serif;
+  color: var(--dark);
+}
+
+.navbar{
+  background-color: var(--purple);
+}
+
+.hero{
+  background: linear-gradient(135deg,var(--pink),#e6d8ff);
+  padding:120px 0 80px;
+  margin-top:56px;
+}
+
+.section{
+  padding:80px 0;
+}
+
+.bg-soft{
+  background: var(--soft);
+}
+
+.profile-img{
+  max-width:260px;
+  border-radius:16px;
+}
+
+.skills span{
+  display:inline-block;
+  background:rgba(75,45,106,0.1);
+  padding:8px 14px;
+  margin:6px;
+  border-radius:30px;
+  font-size:14px;
+}
+
+.project-card{
+  background:white;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  height:100%;
+}
+
+.resume-box{
+  background:white;
+  padding:40px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);}
+
+html, body {
+  height: auto !important;
+  overflow-y: auto !important;
 }
 
 body {
-	font-family: "legitima", serif;
-font-weight: 500;
-font-style: normal;
-	color:#403F4C !important;
+  position: static !important;
+}
+#carouselExample {
+  max-width: 700px;   /* controls size */
+  margin: 0 auto;     /* centers it */
 }
 
-.my-photo {
-	max-width: 200px;
-	border-radius: 8px
+#carouselExample img {
+  width: 100%;
+  height: auto;        /* keeps full image */
+  max-height: 300px;   /* controls overall size */
+  object-fit: contain; /* shows entire image */
+  background: #fff;    /* fills empty space nicely */
 }
+/* Make carousel arrows purple */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
 
-.pink-section {
-    background-color: #EFBCD5 !important; 
-    color: #4A2B2B !important;           
-}
-.btn {
-    background-color: #403F4C !important;   
-    color: white !important;
-    border: none !important;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: 600;
+  filter: invert(21%) sepia(28%) saturate(1200%)
+          hue-rotate(235deg) brightness(90%) contrast(95%);
 }
